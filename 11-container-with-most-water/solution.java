@@ -1,4 +1,4 @@
-// 5 ms | 77.6 MB
+// 5 ms | 77.4 MB
 class Solution {
     public int maxArea(int[] height) {
         int left=0;
