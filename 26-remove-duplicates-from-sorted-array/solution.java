@@ -1,4 +1,4 @@
-// 0 ms | 46.6 MB
+// 1 ms | 46.1 MB
 class Solution {
     public int removeDuplicates(int[] nums) {
         if(nums.length==0) return 0;
