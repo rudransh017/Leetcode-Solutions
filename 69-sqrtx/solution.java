@@ -1,12 +1,23 @@
-// 23 ms | 42.5 MB
+// 2 ms | 42.3 MB
 class Solution {
     public int mySqrt(int x) {
-        int i = 0;
+       int low = 0;
+        int high = x;
+        int ans = 0;
 
-        while ((long)i * i <= x) {
-            i++;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+
+            if ((long) mid * mid <= x) {
+                ans = mid;
+                low = mid + 1;
+            } 
+            else {
+                high = mid - 1;
+            }
         }
 
-        return i - 1;
+        return ans;
     }
+    
 }
